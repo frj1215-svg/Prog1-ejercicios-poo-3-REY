@@ -22,19 +22,39 @@ while (x.Key != ConsoleKey.Enter)
 
 static void EjecutarEjercicio1()
 {
+    //punto a, cargar al menos 2 motos y 2 autos
     Console.WriteLine("cuantos autos desea cargar");
     var cantAutos=Convert.ToInt32(Console.ReadLine());
-    for (int i = 0; i < cantAutos; i++)
+    for (int a = 0; a < cantAutos; a++)
     {
-       Console.WriteLine("ingrese la marca");
-       var marca=Console.ReadLine();
-       Console.WriteLine("ingrese el modelo");
-       var modelo=Console.ReadLine();
-       Console.WriteLine("ingrese el anio");
-       var anio=Convert.ToInt32(Console.ReadLine());
-       Console.WriteLine("ingrese la cant de puertas");
-       var cantPuertas=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("ingrese la marca");
+        var marcaAuto=Console.ReadLine();
+        Console.WriteLine("ingrese el modelo");
+        var modeloAuto=Console.ReadLine();
+        Console.WriteLine("ingrese el anio");
+        var anioAuto=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("ingrese la cant de puertas");
+        var cantPuertas=Convert.ToInt32(Console.ReadLine());
 
-        Auto auto  =new Auto(marca, modelo, anio, cantPuertas);
+        Auto auto  =new Auto(marcaAuto, modeloAuto, anioAuto, cantPuertas);
     }
+
+    Console.WriteLine("cuantas motos desea cargar");
+    var cantMotos=Convert.ToInt32(Console.ReadLine());
+    for (int m = 0; m < cantMotos; m++)
+    {
+        Console.WriteLine("ingrese la marca");
+        var marcaMoto=Console.ReadLine();
+        Console.WriteLine("ingrese el modelo");
+        var modeloMoto=Console.ReadLine();
+        Console.WriteLine("ingrese el anio");
+        var anioMoto=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("si tiene sidecar");
+        var tieneSidecar=Convert.ToBoolean(Console.ReadLine());
+
+        Moto moto =new Moto(marcaMoto, modeloMoto, anioMoto, tieneSidecar);
+    }
+
+
+    
 }
