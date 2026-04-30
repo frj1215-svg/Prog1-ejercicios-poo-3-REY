@@ -59,6 +59,11 @@ Ejercicio01/
  Auto.cs
  Moto.cs
  Vehiculo.cs
+Ejercicio02/
+ Agua.cs
+ Bebida.cs
+ Cafe.cs
+ Jugo.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  EjerciciosPOO3.AssemblyInfo.cs

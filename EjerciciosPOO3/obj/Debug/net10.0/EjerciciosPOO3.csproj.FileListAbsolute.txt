@@ -9,3 +9,4 @@ C:\Users\Usuario\Desktop\facultad\programacion 1\repositorio\Prog1-ejercicios-po
 C:\Users\Usuario\Desktop\facultad\programacion 1\repositorio\Prog1-ejercicios-poo-3-REY\EjerciciosPOO3\obj\Debug\net10.0\refint\EjerciciosPOO3.dll
 C:\Users\Usuario\Desktop\facultad\programacion 1\repositorio\Prog1-ejercicios-poo-3-REY\EjerciciosPOO3\obj\Debug\net10.0\EjerciciosPOO3.pdb
 C:\Users\Usuario\Desktop\facultad\programacion 1\repositorio\Prog1-ejercicios-poo-3-REY\EjerciciosPOO3\obj\Debug\net10.0\ref\EjerciciosPOO3.dll
+C:\Users\Usuario\Desktop\facultad\programacion 1\repositorio\Prog1-ejercicios-poo-3-REY\EjerciciosPOO3\obj\Debug\net10.0\EjerciciosPOO3.sourcelink.json
