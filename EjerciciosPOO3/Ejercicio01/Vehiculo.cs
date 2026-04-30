@@ -8,9 +8,9 @@ public class Vehiculo
 
         public Vehiculo (string marca, string modelo, int anio)
     {
-        marca=Marca;
-        modelo=Modelo;
-        anio=Anio;
+        Marca=marca;
+        Modelo=modelo;
+        Anio=anio;
     }
 
 }
