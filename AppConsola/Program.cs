@@ -1,4 +1,6 @@
 ﻿using EjerciciosPOO3.Ejercicio01;
+using EjerciciosPOO3.Ejercicio02;
+using System.Collections.Generic;
 Console.WriteLine("Hello, World!");
 
 Console.WriteLine("pulse cualquier tecla para continuar");
@@ -6,7 +8,7 @@ var x =Console.ReadKey();
 
 while (x.Key != ConsoleKey.Enter)
 {
-    Console.WriteLine("ingrese que ejercicio desea ejecutar");
+    Console.WriteLine("ingrese que ejercicio desea ejecutar\\n");
     var EjercicioPrueba =Console.ReadLine();
     switch (EjercicioPrueba)
     {
@@ -22,7 +24,7 @@ while (x.Key != ConsoleKey.Enter)
             Console.WriteLine("Ejercicio no econtrado");
         break;
     }
-    Console.WriteLine("pulse cualquier tecla para continuar");
+    Console.WriteLine("pulse cualquier tecla para continuar\\n");
     x =Console.ReadKey();
 }
 
@@ -81,5 +83,30 @@ static void EjecutarEjercicio1()
 
 static void EjercutarEjercicio2()
 {
-    Console.WriteLine("Ejercicio 2");
+    List<Bebida> bebidas = new List<Bebida>();
+
+    Console.WriteLine("ingrese el tipo de bebida que desea preparar");
+    Console.WriteLine("1- Cafe");
+    Console.WriteLine("2- Jugo");
+    Console.WriteLine("3- Agua");
+    var tipoBebida=Console.ReadLine();
+    switch (tipoBebida){
+        case "1":
+            Console.WriteLine("ingrese el nombre del cafe");
+            var nombreCafe=Console.ReadLine();
+            Console.WriteLine("ingrese el precio del cafe");
+            var precioCafe=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("si desea con leche");
+            var tieneLeche=Convert.ToBoolean(Console.ReadLine());
+
+            Cafe cafe = new Cafe(nombreCafe, precioCafe, tieneLeche);
+            bebidas.Add(cafe);
+   
+        break;
+
+        case "2":
+
+        break;
+    }
+
 }

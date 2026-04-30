@@ -12,7 +12,14 @@ public class Agua : Bebida
 
     public override string Preparar()
     {
-        return "Preparando agua";
+        if (TieneGas)
+        {
+            return "Preparando agua con gas";
+        }
+        else
+        {
+            return "Preparando agua sin gas";
+        }
     }
 
     public override double MostrarPrecio()

@@ -10,7 +10,14 @@ public class Cafe:Bebida
 
     public override string Preparar()
     {
-        return "Preparando café";
+        if (TieneLeche)
+        {
+            return "Preparando café con leche";
+        }
+        else
+        {
+            return "Preparando café solo";
+        }
     }
 
     public override double MostrarPrecio()
