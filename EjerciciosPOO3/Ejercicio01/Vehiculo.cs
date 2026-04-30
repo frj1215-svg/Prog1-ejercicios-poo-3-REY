@@ -1,5 +1,5 @@
 namespace EjerciciosPOO3.Ejercicio01;
-
+using System;
 public class Vehiculo
 {
         public string Marca {get;set;}
@@ -8,6 +8,14 @@ public class Vehiculo
 
         public Vehiculo (string marca, string modelo, int anio)
     {
+        try
+        {
+            
+        }
+        catch
+        {
+            
+        }
         Marca=marca;
         Modelo=modelo;
         Anio=anio;
