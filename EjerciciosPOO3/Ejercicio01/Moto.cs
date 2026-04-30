@@ -9,4 +9,9 @@ public class Moto:Vehiculo
     {
         TieneSideCar=tieneSideCar;
     }
+
+    public override string Describir()
+    {
+        return base.Describir()+ $", tiene sidecar: {TieneSideCar}";
+    }
 }

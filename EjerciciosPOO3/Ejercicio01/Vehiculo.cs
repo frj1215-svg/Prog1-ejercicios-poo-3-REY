@@ -13,4 +13,9 @@ public class Vehiculo
         Anio=anio;
     }
 
+    public virtual string Describir()
+    {
+        return $"Marca: {Marca}, Modelo: {Modelo}, Año: {Anio}";
+    }
+
 }

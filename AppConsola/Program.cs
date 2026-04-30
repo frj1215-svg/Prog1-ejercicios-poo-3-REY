@@ -22,6 +22,9 @@ while (x.Key != ConsoleKey.Enter)
 
 static void EjecutarEjercicio1()
 {
+    List<Auto> autos = new List<Auto>();
+    List<Moto> motos = new List<Moto>();
+    
     //punto a, cargar al menos 2 motos y 2 autos
     Console.WriteLine("cuantos autos desea cargar");
     var cantAutos=Convert.ToInt32(Console.ReadLine());
@@ -37,6 +40,7 @@ static void EjecutarEjercicio1()
         var cantPuertas=Convert.ToInt32(Console.ReadLine());
 
         Auto auto  =new Auto(marcaAuto, modeloAuto, anioAuto, cantPuertas);
+        autos.Add(auto);
     }
 
     Console.WriteLine("cuantas motos desea cargar");
@@ -53,8 +57,18 @@ static void EjecutarEjercicio1()
         var tieneSidecar=Convert.ToBoolean(Console.ReadLine());
 
         Moto moto =new Moto(marcaMoto, modeloMoto, anioMoto, tieneSidecar);
+        motos.Add(moto);
     }
 
+    Console.WriteLine("la lista de autos es:");
+    foreach (var a in autos)
+    {
+        Console.WriteLine(a.Describir());
+    }
 
-    
+    Console.WriteLine("la lista de motos es:");
+    foreach (var m in motos)
+    {
+        Console.WriteLine(m.Describir());
+    }
 }
