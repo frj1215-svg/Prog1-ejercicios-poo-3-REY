@@ -14,10 +14,16 @@ while (x.Key != ConsoleKey.Enter)
             EjecutarEjercicio1();
         break;
 
+        case "2":
+            EjercutarEjercicio2();
+        break;
+
         default:
             Console.WriteLine("Ejercicio no econtrado");
         break;
     }
+    Console.WriteLine("pulse cualquier tecla para continuar");
+    x =Console.ReadKey();
 }
 
 static void EjecutarEjercicio1()
@@ -71,4 +77,9 @@ static void EjecutarEjercicio1()
     {
         Console.WriteLine(m.Describir());
     }
+}
+
+static void EjercutarEjercicio2()
+{
+    Console.WriteLine("Ejercicio 2");
 }
