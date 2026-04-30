@@ -8,13 +8,9 @@ public class Vehiculo
 
         public Vehiculo (string marca, string modelo, int anio)
     {
-        try
+        if (anio < 1900)
         {
-            
-        }
-        catch
-        {
-            
+            throw new ArgumentException("El año no puede ser menor a 1900");    
         }
         Marca=marca;
         Modelo=modelo;

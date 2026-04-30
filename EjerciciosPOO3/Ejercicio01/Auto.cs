@@ -17,6 +17,6 @@ public class Auto:Vehiculo
 
     public override string Describir()
     {
-        return base.Describir()+ $", cantidad de peurtas {CantPuertas}";
+        return base.Describir()+ $", cantidad de puertas {CantPuertas}";
     }
 }
