@@ -84,12 +84,16 @@ static void EjecutarEjercicio1()
 //Ejercicio 2, Bebidas
 static void EjercutarEjercicio2()
 {
+    bool x= true;
     List<Bebida> Bebidas = new List<Bebida>();
-
+    while (x)
+    {
+        
     Console.WriteLine("ingrese el tipo de bebida que desea preparar");
     Console.WriteLine("1- Cafe");
     Console.WriteLine("2- Jugo");
     Console.WriteLine("3- Agua");
+    Console.WriteLine("4- Salir");
     var tipoBebida=Console.ReadLine();
     switch (tipoBebida){
         case "1":
@@ -100,8 +104,16 @@ static void EjercutarEjercicio2()
             Console.WriteLine("si desea con leche");
             var tieneLeche=Convert.ToBoolean(Console.ReadLine());
 
-            Cafe cafe = new Cafe(nombreCafe, precioCafe, tieneLeche);
-            Bebidas.Add(cafe);
+                try
+                {
+                Cafe cafe = new Cafe(nombreCafe, precioCafe, tieneLeche);
+                Bebidas.Add(cafe);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+        
    
         break;
 
@@ -130,9 +142,19 @@ static void EjercutarEjercicio2()
 
         break;
 
+        case "4":
+            Console.WriteLine("saliendo");
+            x=false;
+        break;
+
+
         default:
             Console.WriteLine("opcion no valida");
             break;
+    }
+    Console.WriteLine("toque cualquier tecla para continuar");
+    Console.ReadKey();
+    Console.Clear();
     }
 
 }

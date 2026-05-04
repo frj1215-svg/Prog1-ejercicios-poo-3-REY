@@ -15,8 +15,4 @@ public class Jugo:Bebida
         return $"Preparando jugo de {Fruta}";
     }
 
-    public override double MostrarPrecio()
-    {
-        return Precio;
-    }
 }

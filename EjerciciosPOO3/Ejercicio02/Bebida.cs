@@ -7,10 +7,18 @@ public abstract class Bebida
 
         public Bebida(string nombre, double precio)
     {
+        if (Precio <= 0)
+        {
+            throw new ArgumentException("El precio no puede ser menor o igual a cero");
+        }
+
         Nombre=nombre;
         Precio=precio;
     }
 
     public abstract string Preparar();
-    public abstract double MostrarPrecio();  
+    public string MostrarPrecio()
+    {
+        return $"El precio de {Nombre} es: {Precio}";
+    }
 }

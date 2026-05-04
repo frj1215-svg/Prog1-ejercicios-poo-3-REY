@@ -20,8 +20,4 @@ public class Cafe:Bebida
         }
     }
 
-    public override double MostrarPrecio()
-    {
-        return Precio;
-    }
 }

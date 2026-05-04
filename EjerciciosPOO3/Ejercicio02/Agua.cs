@@ -21,9 +21,4 @@ public class Agua : Bebida
             return "Preparando agua sin gas";
         }
     }
-
-    public override double MostrarPrecio()
-    {
-        return Precio;
-    }
 }
