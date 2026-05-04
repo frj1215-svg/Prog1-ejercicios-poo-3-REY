@@ -20,11 +20,15 @@ while (x.Key != ConsoleKey.Enter)
             EjercutarEjercicio2();
         break;
 
+        case "3":
+            EjecutarEjercicio3();
+        break;
+
         default:
             Console.WriteLine("Ejercicio no econtrado");
         break;
     }
-    Console.WriteLine("pulse cualquier tecla para continuar\\n");
+    Console.WriteLine("pulse cualquier tecla para continuar");
     x =Console.ReadKey();
 }
 
@@ -94,6 +98,7 @@ static void EjercutarEjercicio2()
     Console.WriteLine("2- Jugo");
     Console.WriteLine("3- Agua");
     Console.WriteLine("4- Salir");
+    Console.Clear();
     var tipoBebida=Console.ReadLine();
     switch (tipoBebida){
         case "1":
@@ -124,8 +129,17 @@ static void EjercutarEjercicio2()
         var precioJugo=Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("ingrese la fruta de la que va a ser el jugo");
         var frutaJugo =Console.ReadLine();
-        Jugo jugo=new Jugo(nombreJugo, precioJugo, frutaJugo);
-        Bebidas.Add(jugo);
+
+        try
+                {
+                Jugo jugo = new Jugo(nombreJugo, precioJugo, frutaJugo);
+                Bebidas.Add(jugo);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
 
         break;
 
@@ -137,8 +151,15 @@ static void EjercutarEjercicio2()
             Console.WriteLine("con gas?");
             var tieneGas=Convert.ToBoolean(Console.ReadLine());
 
-            Agua agua =new Agua(nombreAgua,precioAgua, tieneGas);
-            Bebidas.Add(agua);
+            try
+                {
+                Agua agua = new Agua(nombreAgua, precioAgua, tieneGas);
+                Bebidas.Add(agua);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
 
         break;
 
@@ -157,4 +178,9 @@ static void EjercutarEjercicio2()
     Console.Clear();
     }
 
+}
+
+static void EjecutarEjercicio3()
+{
+    Console.WriteLine("Ejercicio 3, aun no se que hacer");
 }
