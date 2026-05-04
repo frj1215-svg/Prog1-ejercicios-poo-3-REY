@@ -28,6 +28,7 @@ while (x.Key != ConsoleKey.Enter)
     x =Console.ReadKey();
 }
 
+//Ejercicio 1, Vehiculos    
 static void EjecutarEjercicio1()
 {
     List<Auto> autos = new List<Auto>();
@@ -80,10 +81,10 @@ static void EjecutarEjercicio1()
         Console.WriteLine(m.Describir());
     }
 }
-
+//Ejercicio 2, Bebidas
 static void EjercutarEjercicio2()
 {
-    List<Bebida> bebidas = new List<Bebida>();
+    List<Bebida> Bebidas = new List<Bebida>();
 
     Console.WriteLine("ingrese el tipo de bebida que desea preparar");
     Console.WriteLine("1- Cafe");
@@ -100,13 +101,38 @@ static void EjercutarEjercicio2()
             var tieneLeche=Convert.ToBoolean(Console.ReadLine());
 
             Cafe cafe = new Cafe(nombreCafe, precioCafe, tieneLeche);
-            bebidas.Add(cafe);
+            Bebidas.Add(cafe);
    
         break;
 
         case "2":
+        Console.WriteLine("ingrese nombre del jugo");
+        var nombreJugo = Console.ReadLine();
+        Console.WriteLine("ingrese el precio del jugo");
+        var precioJugo=Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("ingrese la fruta de la que va a ser el jugo");
+        var frutaJugo =Console.ReadLine();
+        Jugo jugo=new Jugo(nombreJugo, precioJugo, frutaJugo);
+        Bebidas.Add(jugo);
 
         break;
+
+        case "3":
+            Console.WriteLine("ingrese el nombre del agua");
+            var nombreAgua=Console.ReadLine();
+            Console.WriteLine("ingrese el precio del agua");
+            var precioAgua=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("con gas?");
+            var tieneGas=Convert.ToBoolean(Console.ReadLine());
+
+            Agua agua =new Agua(nombreAgua,precioAgua, tieneGas);
+            Bebidas.Add(agua);
+
+        break;
+
+        default:
+            Console.WriteLine("opcion no valida");
+            break;
     }
 
 }

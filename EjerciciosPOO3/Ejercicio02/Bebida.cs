@@ -12,6 +12,5 @@ public abstract class Bebida
     }
 
     public abstract string Preparar();
-    public abstract double MostrarPrecio();
-        
+    public abstract double MostrarPrecio();  
 }
