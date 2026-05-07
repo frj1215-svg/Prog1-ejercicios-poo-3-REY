@@ -1,5 +1,6 @@
 ﻿using EjerciciosPOO3.Ejercicio01;
 using EjerciciosPOO3.Ejercicio02;
+using EjerciciosPOO3.Ejercicio05;
 using System.Collections.Generic;
 Console.WriteLine("Hello, World!");
 
@@ -21,7 +22,7 @@ while (x.Key != ConsoleKey.Enter)
         break;
 
         case "3":
-            EjecutarEjercicio3();
+            EjecutarEjercicio5();
         break;
 
         default:
@@ -180,7 +181,7 @@ static void EjercutarEjercicio2()
 
 }
 
-static void EjecutarEjercicio3()
+static void EjecutarEjercicio5()
 {
     Console.WriteLine("Ejercicio 3, aun no se que hacer");
 }
