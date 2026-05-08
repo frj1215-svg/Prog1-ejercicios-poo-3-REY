@@ -6,7 +6,7 @@ namespace EjerciciosPOO3.Ejercicio05;
         EnMantenimiento,
     }
 
-public class Vehiculo
+public class VehiculoEj03
 {
     public string Patente {get;set;}
     public int Anio {get;set;}

@@ -183,5 +183,28 @@ static void EjercutarEjercicio2()
 
 static void EjecutarEjercicio5()
 {
-    Console.WriteLine("Ejercicio 3, aun no se que hacer");
+
+    List<VehiculoEj03> vehiculos = new List<VehiculoEj03>();
+    
+    Console.WriteLine("ingrese el vehiculo que quiere ingresar");
+    Console.WriteLine("1- Camion");
+    Console.WriteLine("2- Furgoneta");
+    Console.WriteLine("3- Salir");
+
+    var tipoVehiculo=Console.ReadLine();
+
+    switch(tipoVehiculo){
+        case "1":
+            // Procesar ingreso de camión
+            break;
+        case "2":
+            // Procesar ingreso de furgoneta
+            break;
+        case "3":
+            Console.WriteLine("Saliendo");
+            break;
+        default:
+            Console.WriteLine("Opción no válida");
+            break;
+    }
 }
