@@ -12,7 +12,7 @@ public class VehiculoEj03
     public int Anio {get;set;}
     public EstadoVehiculo Estado{get;set;}
 
-    public Vehiculo(string patente, int anio, EstadoVehiculo estado)
+    public VehiculoEj03(string patente, int anio, EstadoVehiculo estado)
     {
         Patente = patente;
         Anio = anio;

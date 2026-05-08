@@ -1,6 +1,6 @@
 namespace EjerciciosPOO3.Ejercicio05;
 
-public class Camion : Vehiculo
+public class Camion : VehiculoEj03
 {
     public int CargaMaxima {get;set;}
 

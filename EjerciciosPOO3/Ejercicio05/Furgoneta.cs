@@ -1,6 +1,6 @@
 namespace EjerciciosPOO3.Ejercicio05;
 
-public class Furgoneta : Vehiculo
+public class Furgoneta : VehiculoEj03
 {
     public int CapacidadEnM3{get;set;}
 
